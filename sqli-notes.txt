@@ -1,0 +1,31 @@
+🛡️ SQL Injection Notes
+
+🔍 What is SQL Injection?
+- SQLi occurs when an attacker injects malicious SQL code into a query.
+- Common in login forms, search boxes, and any user input that goes into database.
+
+⚡ How Login Bypass Works?
+
+Normal Query:
+SELECT * FROM users 
+WHERE username='chetan' AND password='1234';
+
+After Injection (in password field):
+' OR 1=1 --
+
+Malicious Query becomes:
+SELECT * FROM users 
+WHERE username='chetan' AND password='' OR 1=1 --';
+
+→ Login succeeds because 1=1 is always TRUE.
+
+🔥 Key Payloads I Used:
+• ' OR 1=1 --
+• admin' --
+• ' OR '1'='1
+• ') OR 1=1 --
+
+💡 Key Learning:
+- Never trust raw user input in SQL queries
+- Always use Prepared Statements / Parameterized Queries
+- Input validation + escaping is very important
