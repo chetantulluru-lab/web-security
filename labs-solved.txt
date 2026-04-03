@@ -1,0 +1,11 @@
+✅ PortSwigger SQL Injection Labs - Solved
+
+🔬 Lab 1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+→ Result: Successfully retrieved hidden products/categories using SQL injection
+
+🔬 Lab 2: SQL injection vulnerability allowing login bypass
+→ Result: Logged in as administrator without correct password using ' OR 1=1 --
+
+📊 Summary:
+Total Labs Solved: 2 (All available Apprentice level SQLi labs)
+Platform: PortSwigger Web Security Academy
